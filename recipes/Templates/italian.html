@@ -1,0 +1,124 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}SLICES AND SPICES{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <nav>
+        <ul>
+          <li><a href="{% url 'home' %}">Home</a></li>
+          <li><a href="{% url 'mexican' %}">Mexican Cuisine</a></li>
+          <li><a href="{% url 'ethiopian' %}">Ethiopian Cuisine</a></li>
+          <li><a href="{% url 'chinese' %}">Chinese Cuisine</a></li>
+          <li><a href="{% url 'spanish' %}">Spanish Cuisine</a></li>
+          <li><a href="{% url 'italian' %}">Italian Cuisine</a></li>
+          <li><a href="{% url 'feedback' %}">Feedback</a></li>
+        </ul>
+      </nav>
+      <h2>Cooking Tips</h2>
+      <a
+        href="https://www.epicurious.com/expert-advice/best-cooking-advice-ever-article"
+        target="_blank"
+        >Visit Cooking Tips Website</a
+      >
+      <a href="https://www.kitchensanity.com/cooking-tips/" target="_blank"
+        >Beginners Cooking Tips</a
+      >
+      <a
+        href="https://www.bhg.com/recipes/how-to/cooking-basics/cooking-techniques-everyone-should-master/"
+        target="_blank"
+        >Cooking Techniques</a
+      >
+    </div>
+
+    <div class="content">
+      <header>
+        <h1>SLICES AND SPICES</h1>
+      </header>
+
+      <main>
+        <h2>Italian Cuisine</h2>
+        <p>
+          Discover the rich flavors and vibrant spices of italian cuisine...
+        </p>
+        <div>
+          <h3>Pizza</h3>
+          <div class="food-grid"><img src="{% static 'D:/SCHOOL/Django/slices_and_spices/recipes/static/images/italian-pizza.jpg' %}" alt="Tacos" ></div>
+
+          <h4>Ingredients</h4>
+        <ul>
+            <li>250 g All-purpose flour</li>
+            <li>1 tsp Salt</li>
+            <li>1 tsp Sugar</li>
+            <li>7 g Active dry yeast (1 packet)</li>
+            <li>160 ml Warm water</li>
+            <li>1 tbsp Olive oil</li>
+            <li>120 ml Tomato sauce</li>
+            <li>200 g Mozzarella cheese, shredded</li>
+            <li>1 tsp Dried oregano</li>
+            <li>Fresh basil leaves (optional)</li>
+            <li>Your choice of toppings (pepperoni, bell peppers, onions, mushrooms, etc.)</li>
+        </ul>
+        <h4>Instructions</h4>
+        <ol>
+            <li>In a large mixing bowl, combine the flour, salt, and sugar.</li>
+            <li>In a small bowl, dissolve the yeast in warm water. Let it sit for about 5 minutes until it becomes frothy.</li>
+            <li>Pour the yeast mixture and olive oil into the flour mixture. Mix until a dough forms.</li>
+            <li>Knead the dough on a floured surface for about 5-7 minutes until it becomes smooth and elastic.</li>
+            <li>Place the dough in a lightly oiled bowl, cover with a damp cloth, and let it rise in a warm place for about 1 hour or until it has doubled in size.</li>
+            <li>Preheat your oven to 220°C (430°F).</li>
+            <li>Punch down the dough and roll it out on a floured surface to your desired thickness.</li>
+            <li>Transfer the rolled dough to a baking sheet or pizza stone.</li>
+            <li>Spread the tomato sauce evenly over the dough, leaving a small border around the edges.</li>
+            <li>Sprinkle the shredded mozzarella cheese over the sauce.</li>
+            <li>Add your choice of toppings and sprinkle dried oregano over the top.</li>
+            <li>Bake in the preheated oven for 12-15 minutes, or until the crust is golden and the cheese is bubbly and melted.</li>
+            <li>Remove from the oven and let it cool for a few minutes. Garnish with fresh basil leaves if desired.</li>
+            <li>Slice and serve your homemade pizza hot.</li>
+        </ol>
+      </div>
+      <div>
+          <h3>Chicken pesto pasta</h3>
+          <div class="food-grid"><img src="{% static 'D:/SCHOOL/Django/slices_and_spices/recipes/static/images/pasta.jpg' %}" alt="Tacos" ></div>
+
+          <h4>Ingredients</h4>
+        <ul>
+            <li>400 g Chicken breast fillets, skinless and boneless, 2 x Chicken breasts</li>
+            <li>145 g Fresh pesto</li>
+            <li>350 g Dried pasta</li>
+            <li>200 g Green beans</li>
+            <li>200 g Cherry tomatoes, Halved</li>
+            <li>2 tbsp Creme fraiche</li>
+            <li>Salt and pepper</li>
+        </ul>
+        <h4>Instructions</h4>
+        <ol>
+            <li>Preheat the grill to hot.</li>
+            <li>Flatten your chicken breasts (I do this by laying them between sheets of cling film and bashing with a rolling pin). Pop them onto a baking tray and cook one side under the grill for 5 minutes, turn over and spread a teaspoon of the pesto onto each one and pop back under the grill for another 5 minutes or until cooked through.</li>
+            <li>Meanwhile, cook the pasta in boiling, salted water for 10 minutes or according to pack instructions.</li>
+            <li>Whilst the pasta is cooking halve the cherry tomatoes, and trim the green beans as necessary. </li>
+            <li>4 minutes before the end of the cooking time, throw in the green beans with the boiling pasta.</li>
+            <li>Cut the chicken into thin slices.</li>
+            <li>Drain the pasta and beans, stir in the rest of the pasta, the cherry tomato halves, the creme fraiche, chicken,salt and pepper and pine nuts.</li>
+        </ol>
+
+      </div>
+      </main>
+
+      <footer>
+        <p>&copy; 2024 Slices and Spices. All rights reserved.</p>
+        <p>
+          Contact us at
+          <a href="mailto:info@slicesandspices.com">info@slicesandspices.com</a>
+        </p>
+      </footer>
+    </div>
+
+    <script src="{% static 'js/main.js' %}"></script>
+  </body>
+</html>

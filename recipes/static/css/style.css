@@ -1,0 +1,114 @@
+body {
+  display: flex;
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+
+img{
+    width:fit-content;
+}
+
+header,
+footer {
+  text-align: center;
+  background-color: #4cbb17;
+  width: 100%;
+  font-family: serif;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.medium-image {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.sidebar {
+  width: 19%;
+  background-color: #9acd32;
+  padding: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  overflow: auto;
+}
+
+.content {
+  margin-left: 20%;
+  padding: 20px;
+  width: 80%;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.sidebar a:hover {
+  color: #007bff;
+}
+
+.food-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 10px;
+    padding: 20px;
+    /* max-width: 800px; */
+    /* margin: 20px auto; */
+}
+
+
+/* .food-item:hover {
+  transform: scale(1.05);
+} */
+
+.food-grid img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+  border-radius: 10px; /* Optional: Adds rounded corners to images */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow for a nicer look */
+}
+
+/* Responsive design for smaller screens */
+
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+  .food-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .sidebar {
+    width: 100%;
+    position: static;
+    height: auto;
+  }
+
+  .content {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .food-grid {
+    grid-template-columns: 1fr;
+  }
+}

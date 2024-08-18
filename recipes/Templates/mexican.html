@@ -1,0 +1,138 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}SLICES AND SPICES{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <nav>
+        <ul>
+          <li><a href="{% url 'home' %}">Home</a></li>
+          <li><a href="{% url 'mexican' %}">Mexican Cuisine</a></li>
+          <li><a href="{% url 'ethiopian' %}">Ethiopian Cuisine</a></li>
+          <li><a href="{% url 'chinese' %}">Chinese Cuisine</a></li>
+          <li><a href="{% url 'spanish' %}">Spanish Cuisine</a></li>
+          <li><a href="{% url 'italian' %}">Italian Cuisine</a></li>
+          <li><a href="{% url 'feedback' %}">Feedback</a></li>
+        </ul>
+      </nav>
+      <h2>Cooking Tips</h2>
+      <a
+        href="https://www.epicurious.com/expert-advice/best-cooking-advice-ever-article"
+        target="_blank"
+        >Visit Cooking Tips Website</a
+      >
+      <a href="https://www.kitchensanity.com/cooking-tips/" target="_blank"
+        >Beginners Cooking Tips</a
+      >
+      <a
+        href="https://www.bhg.com/recipes/how-to/cooking-basics/cooking-techniques-everyone-should-master/"
+        target="_blank"
+        >Cooking Techniques</a
+      >
+    </div>
+
+    <div class="content">
+      <header>
+        <h1>SLICES AND SPICES</h1>
+      </header>
+
+      <main>
+        <h2>Mexican Cuisine</h2>
+        <p>
+          Discover the rich flavors and vibrant spices of Mexican cuisine...
+        </p>
+        <div>
+          <h3>Tacos</h3>
+          <div class="food-grid"><img src="{% static 'D:/SCHOOL/Django/slices_and_spices/recipes/static/images/1.jpeg' %}" alt="Tacos" ></div>
+
+          <h4>Ingredients</h4>
+          <ul>
+            <li>2 tsp Sunflower oil</li>
+            <li>500 g Beef mince</li>
+            <li>2 tbsp Fajita seasoning</li>
+            <li>2 tsp Garlic granules</li>
+            <li>2 tbsp Tomato puree</li>
+            <li>400 g Kidney beans</li>
+            <li>100 ml Water</li>
+            <li>Sea salt</li>
+          </ul>
+          <h4>Instructions</h4>
+          <ol>
+            <li>
+              Heat the oil in a saute pan over a medium heat. Add the beef and
+              brown all over for about 5 minutes, breaking up with a spoon.
+            </li>
+            <li>
+              Add the fajita seasoning, garlic granules, tomato puree, kidney
+              beans, water and a sprinkle of sea salt. Cook for a further 5-10
+              minutes until the beans are hot and the meat is well cooked.
+            </li>
+            <li>
+              Meanwhile, heat the tortillas according to the pack instructions
+              (microwave, oven, gas flame or toaster all work!)
+            </li>
+            <li>
+              Pile in the fillings (or let everyone help themselves) and serve!
+            </li>
+          </ol>
+        </div>
+        <div>
+          <h3>Quesadillas</h3>
+          <div class="food-grid"><img src="{% static 'D:/SCHOOL/Django/slices_and_spices/recipes/static/images/quesadillas.jpg' %}" alt="Tacos" ></div>
+
+          <h4>Ingredients</h4>
+          <ul>
+            <li>300 g Cooked chicken, Approx 2-3 breasts.</li>
+            <li>400 g Black beans, Drained and rinsed.</li>
+            <li>340 g Sweetcorn, 1x tin. Drained and rinsed.</li>
+            <li>1/2 Red onion, Peeled and finely chopped.</li>
+            <li>2 tsp Fajita seasoning</li>
+            <li>2 tsp Sunflower oil</li>
+            <li>8 Large flour tortillas</li>
+            <li>200 g Grated mozzarella</li>
+          </ul>
+          <h4>Instructions</h4>
+          <ol>
+            <li>
+              In a large bowl, mix the chicken, beans, sweetcorn, onion and
+              fajita seasoning.
+            </li>
+            <li>
+              Preheat 1/2 tsp of the oil in a large frying pan over a medium
+              heat.
+            </li>
+            <li>
+              Sit one tortilla in the pan, sprinkle over a small amount of the
+              cheese (about 25g – no need to weigh but just as a guide!)
+            </li>
+            <li>Spoon on a quarter of the chicken and bean mixture.</li>
+            <li>
+              Sprinkle another 25g of cheese on top and sit another tortilla on
+              top. Use the bottom of a clean saucepan to weigh down the
+              quesadilla.
+            </li>
+            <li>
+              Cook on that side for 3 minutes, then remove the saucepan and
+              carefully flip over. Cook for another 3 minutes.
+            </li>
+          </ol>
+        </div>
+      </main>
+
+      <footer>
+        <p>&copy; 2024 Slices and Spices. All rights reserved.</p>
+        <p>
+          Contact us at
+          <a href="mailto:info@slicesandspices.com">info@slicesandspices.com</a>
+        </p>
+      </footer>
+    </div>
+
+    <script src="{% static 'js/main.js' %}"></script>
+  </body>
+</html>

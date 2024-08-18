@@ -1,0 +1,116 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}SLICES AND SPICES{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <nav>
+        <ul>
+          <li><a href="{% url 'home' %}">Home</a></li>
+          <li><a href="{% url 'mexican' %}">Mexican Cuisine</a></li>
+          <li><a href="{% url 'ethiopian' %}">Ethiopian Cuisine</a></li>
+          <li><a href="{% url 'chinese' %}">Chinese Cuisine</a></li>
+          <li><a href="{% url 'spanish' %}">Spanish Cuisine</a></li>
+          <li><a href="{% url 'italian' %}">Italian Cuisine</a></li>
+          <li><a href="{% url 'feedback' %}">Feedback</a></li>
+        </ul>
+      </nav>
+      <h2>Cooking Tips</h2>
+      <a
+        href="https://www.epicurious.com/expert-advice/best-cooking-advice-ever-article"
+        target="_blank"
+        >Visit Cooking Tips Website</a
+      >
+      <a href="https://www.kitchensanity.com/cooking-tips/" target="_blank"
+        >Beginners Cooking Tips</a
+      >
+      <a
+        href="https://www.bhg.com/recipes/how-to/cooking-basics/cooking-techniques-everyone-should-master/"
+        target="_blank"
+        >Cooking Techniques</a
+      >
+    </div>
+
+    <div class="content">
+      <header>
+        <h1>SLICES AND SPICES</h1>
+      </header>
+
+      <main>
+        <h2>Ethiopian Cuisine</h2>
+        <p>
+          Discover the rich flavors and vibrant spices of Ethiopian cuisine...
+        </p>
+        <div>
+          <h3>Injera</h3>
+          <div class="food-grid"><img src="{% static 'D:/SCHOOL/Django/slices_and_spices/recipes/static/images/Ethiopian-injera.jpg' %}" alt="Tacos" ></div>
+
+          <h4>Ingredients</h4>
+          <ul>
+              <li>2 cups Teff flour</li>
+              <li>3 cups Water</li>
+              <li>1/4 tsp Salt</li>
+              <li>Optional: Yeast (if fermenting for a shorter time)</li>
+          </ul>
+          <h4>Instructions</h4>
+          <ol>
+              <li>In a large bowl, mix the teff flour with 2 cups of water to create a batter. Cover and let it sit at room temperature for 2 to 3 days to ferment.</li>
+              <li>Once the batter is bubbly and has a slightly sour smell, add the remaining water and salt, then mix well.</li>
+              <li>Heat a non-stick skillet over medium heat. Pour a thin layer of batter, covering the entire surface of the skillet.</li>
+              <li>Cover the skillet with a lid and cook for about 1-2 minutes until the injera is cooked through and small bubbles form on the surface.</li>
+              <li>Remove the injera from the skillet and let it cool. Repeat with the remaining batter.</li>
+              <li>Injera is traditionally served with various stews and salads on top.</li>
+          </ol>
+      </div>
+      <div>
+          <h3>Doro Wat</h3>
+          <div class="food-grid"><img src="{% static 'D:/SCHOOL/Django/slices_and_spices/recipes/static/images/Ethiopian- Dorowat.jpg' %}" alt="Tacos" ></div>
+
+          <h4>Ingredients</h4>
+          <ul>
+              <li>1.5 kg Chicken, cut into pieces</li>
+              <li>3 large Onions, finely chopped</li>
+              <li>1/2 cup Niter Kibbeh (spiced clarified butter)</li>
+              <li>3 tbsp Berbere spice mix</li>
+              <li>2 cloves Garlic, minced</li>
+              <li>1 tbsp Ginger, minced</li>
+              <li>1 tsp Ground cardamom</li>
+              <li>1 tsp Ground fenugreek</li>
+              <li>1 tsp Paprika</li>
+              <li>1 tsp Salt</li>
+              <li>4 Hard-boiled eggs, peeled</li>
+              <li>Juice of 1 lemon</li>
+              <li>Water as needed</li>
+          </ul>
+          <h4>Instructions</h4>
+          <ol>
+              <li>Marinate the chicken pieces with lemon juice and a pinch of salt. Set aside.</li>
+              <li>In a large pot, cook the onions over medium heat without oil, stirring frequently until they are softened and golden brown.</li>
+              <li>Add the niter kibbeh and cook for another 2-3 minutes.</li>
+              <li>Stir in the garlic, ginger, and berbere spice mix. Cook for 5 minutes, stirring constantly to avoid burning the spices.</li>
+              <li>Add the marinated chicken to the pot, ensuring each piece is well-coated with the spice mixture.</li>
+              <li>Pour in enough water to cover the chicken. Add the cardamom, fenugreek, paprika, and salt. Bring to a simmer.</li>
+              <li>Cover the pot and cook over low heat for about 45 minutes to an hour, until the chicken is tender.</li>
+              <li>Add the hard-boiled eggs during the last 15 minutes of cooking, allowing them to absorb the flavors.</li>
+              <li>Adjust seasoning if necessary. Serve the Doro Wat hot with Injera.</li>
+          </ol>
+      </div>
+      </main>
+
+      <footer>
+        <p>&copy; 2024 Slices and Spices. All rights reserved.</p>
+        <p>
+          Contact us at
+          <a href="mailto:info@slicesandspices.com">info@slicesandspices.com</a>
+        </p>
+      </footer>
+    </div>
+
+    <script src="{% static 'js/main.js' %}"></script>
+  </body>
+</html>

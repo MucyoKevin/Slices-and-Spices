@@ -1,0 +1,127 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}SLICES AND SPICES{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <nav>
+        <ul>
+          <li><a href="{% url 'home' %}">Home</a></li>
+          <li><a href="{% url 'mexican' %}">Mexican Cuisine</a></li>
+          <li><a href="{% url 'ethiopian' %}">Ethiopian Cuisine</a></li>
+          <li><a href="{% url 'chinese' %}">Chinese Cuisine</a></li>
+          <li><a href="{% url 'spanish' %}">Spanish Cuisine</a></li>
+          <li><a href="{% url 'italian' %}">Italian Cuisine</a></li>
+          <li><a href="{% url 'feedback' %}">Feedback</a></li>
+        </ul>
+      </nav>
+      <h2>Cooking Tips</h2>
+      <a
+        href="https://www.epicurious.com/expert-advice/best-cooking-advice-ever-article"
+        target="_blank"
+        >Visit Cooking Tips Website</a
+      >
+      <a href="https://www.kitchensanity.com/cooking-tips/" target="_blank"
+        >Beginners Cooking Tips</a
+      >
+      <a
+        href="https://www.bhg.com/recipes/how-to/cooking-basics/cooking-techniques-everyone-should-master/"
+        target="_blank"
+        >Cooking Techniques</a
+      >
+    </div>
+
+    <div class="content">
+      <header>
+        <h1>SLICES AND SPICES</h1>
+      </header>
+
+      <main>
+        <h2>Chinese Cuisine</h2>
+        <p>
+          Discover the rich flavors and vibrant spices of Chinese cuisine...
+        </p>
+        <div>
+          <h3>Dumplings</h3>
+          <div class="food-grid"><img src="{% static 'D:/SCHOOL/Django/slices_and_spices/recipes/static/images/Chinese-dumplings.jpg' %}" alt="Tacos" ></div>
+
+          <h4>Ingredients</h4>
+          <ul>
+              <li>300 g Ground pork</li>
+              <li>200 g Napa cabbage, finely chopped</li>
+              <li>2 Green onions, finely chopped</li>
+              <li>2 cloves Garlic, minced</li>
+              <li>1 tbsp Soy sauce</li>
+              <li>1 tbsp Sesame oil</li>
+              <li>1 tbsp Rice vinegar</li>
+              <li>1 tsp Ginger, minced</li>
+              <li>1/2 tsp Salt</li>
+              <li>1/4 tsp White pepper</li>
+              <li>30-40 Dumpling wrappers</li>
+              <li>Water for sealing the wrappers</li>
+              <li>Vegetable oil for frying</li>
+          </ul>
+          <h4>Instructions</h4>
+          <ol>
+              <li>In a large bowl, combine the ground pork, cabbage, green onions, garlic, soy sauce, sesame oil, rice vinegar, ginger, salt, and white pepper. Mix until well combined.</li>
+              <li>Place about 1 teaspoon of the filling in the center of each dumpling wrapper.</li>
+              <li>Dip your finger in water and run it along the edge of the wrapper. Fold the wrapper in half and pinch the edges to seal. You can pleat the edges for a more traditional look.</li>
+              <li>Heat a tablespoon of oil in a non-stick skillet over medium heat. Arrange the dumplings in the skillet, flat side down.</li>
+              <li>Cook for 2-3 minutes until the bottoms are golden brown.</li>
+              <li>Add about 1/4 cup of water to the skillet and cover with a lid. Steam the dumplings for about 5 minutes until the water evaporates and the dumplings are cooked through.</li>
+              <li>Remove the lid and let the dumplings cook for another minute to re-crisp the bottoms.</li>
+              <li>Serve the dumplings hot with soy sauce or your favorite dipping sauce.</li>
+          </ol>
+      </div>
+      <div>
+          <h3>Chow Mein</h3>
+          <div class="food-grid"><img src="{% static 'D:/SCHOOL/Django/slices_and_spices/recipes/static/images/chinese-chow mein.jpg' %}" alt="Tacos" ></div>
+
+          <h4>Ingredients</h4>
+          <ul>
+              <li>200 g Chow mein noodles</li>
+              <li>200 g Chicken breast, thinly sliced</li>
+              <li>1 Bell pepper, thinly sliced</li>
+              <li>1 Carrot, julienned</li>
+              <li>100 g Bean sprouts</li>
+              <li>2 Green onions, chopped</li>
+              <li>2 cloves Garlic, minced</li>
+              <li>2 tbsp Soy sauce</li>
+              <li>1 tbsp Oyster sauce</li>
+              <li>1 tbsp Hoisin sauce</li>
+              <li>1 tsp Sesame oil</li>
+              <li>1 tsp Sugar</li>
+              <li>2 tbsp Vegetable oil for frying</li>
+              <li>Salt and pepper to taste</li>
+          </ul>
+          <h4>Instructions</h4>
+          <ol>
+              <li>Cook the chow mein noodles according to the package instructions. Drain and set aside.</li>
+              <li>In a small bowl, mix the soy sauce, oyster sauce, hoisin sauce, sesame oil, and sugar. Set the sauce aside.</li>
+              <li>Heat 1 tablespoon of vegetable oil in a large wok or frying pan over medium-high heat.</li>
+              <li>Add the chicken slices and stir-fry until fully cooked, about 5 minutes. Remove the chicken from the pan and set aside.</li>
+              <li>In the same pan, add the remaining oil and stir-fry the garlic, bell pepper, and carrot for 2-3 minutes.</li>
+              <li>Add the cooked noodles to the pan, along with the sauce mixture. Toss everything together to coat the noodles evenly.</li>
+              <li>Add the cooked chicken, bean sprouts, and green onions to the pan. Stir-fry for another 2 minutes until everything is well combined and heated through.</li>
+              <li>Season with salt and pepper to taste. Serve hot.</li>
+          </ol>
+      </div>
+      </main>
+
+      <footer>
+        <p>&copy; 2024 Slices and Spices. All rights reserved.</p>
+        <p>
+          Contact us at
+          <a href="mailto:info@slicesandspices.com">info@slicesandspices.com</a>
+        </p>
+      </footer>
+    </div>
+
+    <script src="{% static 'js/main.js' %}"></script>
+  </body>
+</html>

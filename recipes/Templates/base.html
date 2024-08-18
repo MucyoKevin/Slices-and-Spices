@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}SLICES AND SPICES{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="sidebar">
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'mexican' %}">Mexican Cuisine</a></li>
+                <li><a href="{% url 'ethiopian' %}">Ethiopian Cuisine</a></li>
+                <li><a href="{% url 'chinese' %}">Chinese Cuisine</a></li>
+                <li><a href="{% url 'spanish' %}">Spanish Cuisine</a></li>
+                <li><a href="{% url 'italian' %}">Italian Cuisine</a></li>
+                <li><a href="{% url 'feedback' %}">Feedback</a></li>
+            </ul>
+        </nav>
+        <h2>Cooking Tips</h2>
+        <a href="https://www.epicurious.com/expert-advice/best-cooking-advice-ever-article" target="_blank">Visit Cooking Tips Website</a>
+        <a href="https://www.kitchensanity.com/cooking-tips/" target="_blank">Beginners Cooking Tips</a>
+        <a href="https://www.bhg.com/recipes/how-to/cooking-basics/cooking-techniques-everyone-should-master/" target="_blank">Cooking Techniques</a>
+    </div>
+
+    <div class="content">
+        <header>
+            <h1>SLICES AND SPICES</h1>
+        </header>
+
+        <main>
+            {% block content %}
+            {% endblock %}
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Slices and Spices. All rights reserved.</p>
+            <p>Contact us at <a href="mailto:info@slicesandspices.com">info@slicesandspices.com</a></p>
+        </footer>
+    </div>
+
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>

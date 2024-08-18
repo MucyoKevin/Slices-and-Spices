@@ -1,0 +1,103 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}SLICES AND SPICES{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <nav>
+        <ul>
+          <li><a href="{% url 'home' %}">Home</a></li>
+          <li><a href="{% url 'mexican' %}">Mexican Cuisine</a></li>
+          <li><a href="{% url 'ethiopian' %}">Ethiopian Cuisine</a></li>
+          <li><a href="{% url 'chinese' %}">Chinese Cuisine</a></li>
+          <li><a href="{% url 'spanish' %}">Spanish Cuisine</a></li>
+          <li><a href="{% url 'italian' %}">Italian Cuisine</a></li>
+          <li><a href="{% url 'feedback' %}">Feedback</a></li>
+        </ul>
+      </nav>
+      <h2>Cooking Tips</h2>
+      <a
+        href="https://www.epicurious.com/expert-advice/best-cooking-advice-ever-article"
+        target="_blank"
+        >Visit Cooking Tips Website</a
+      >
+      <a href="https://www.kitchensanity.com/cooking-tips/" target="_blank"
+        >Beginners Cooking Tips</a
+      >
+      <a
+        href="https://www.bhg.com/recipes/how-to/cooking-basics/cooking-techniques-everyone-should-master/"
+        target="_blank"
+        >Cooking Techniques</a
+      >
+    </div>
+
+    <div class="content">
+      <header>
+        <h1>SLICES AND SPICES</h1>
+      </header>
+
+      <main>
+        <h2>Spanish Cuisine</h2>
+        <p>
+          Discover the rich flavors and vibrant spices of spanish cuisine...
+        </p>
+        <div>
+          <h3>Paella</h3>
+          <div class="food-grid"><img src="{% static 'D:/SCHOOL/Django/slices_and_spices/recipes/static/images/Spanish -Paella.jpg' %}" alt="Tacos" ></div>
+
+          <h4>Ingredients</h4>
+          <ul>
+              <li>2 tbsp Olive oil</li>
+              <li>1 Onion, finely chopped</li>
+              <li>3 cloves Garlic, minced</li>
+              <li>1 Red bell pepper, chopped</li>
+              <li>2 Tomatoes, chopped</li>
+              <li>200 g Chorizo, sliced</li>
+              <li>300 g Arborio rice or short-grain paella rice</li>
+              <li>1 tsp Smoked paprika</li>
+              <li>1/2 tsp Saffron threads, soaked in 2 tbsp warm water</li>
+              <li>1 liter Chicken or seafood stock</li>
+              <li>200 g Chicken thighs, cut into bite-sized pieces</li>
+              <li>200 g Prawns, peeled and deveined</li>
+              <li>200 g Mussels, cleaned</li>
+              <li>100 g Green peas</li>
+              <li>Salt and pepper to taste</li>
+              <li>Lemon wedges for serving</li>
+              <li>Fresh parsley for garnish</li>
+          </ul>
+          <h4>Instructions</h4>
+          <ol>
+              <li>Heat the olive oil in a large paella pan or a wide, deep skillet over medium heat.</li>
+              <li>Add the chopped onion and cook until it becomes translucent, about 5 minutes.</li>
+              <li>Stir in the garlic and red bell pepper, and cook for another 2-3 minutes.</li>
+              <li>Add the chopped tomatoes and sliced chorizo, cooking until the tomatoes have softened and the chorizo is slightly browned.</li>
+              <li>Stir in the rice, making sure it is well coated with the oil and vegetables.</li>
+              <li>Add the smoked paprika and the saffron with its soaking water, stirring to combine.</li>
+              <li>Pour in the chicken or seafood stock, stirring well to distribute the ingredients evenly.</li>
+              <li>Bring the mixture to a boil, then reduce the heat to low and simmer for about 10 minutes, uncovered.</li>
+              <li>Add the chicken pieces, prawns, mussels, and green peas, nestling them into the rice mixture. Season with salt and pepper to taste.</li>
+              <li>Continue to cook the paella, without stirring, for about 15-20 minutes, until the rice is tender and the liquid is absorbed. The bottom should form a nice, crispy layer called "socarrat."</li>
+              <li>If the rice is not fully cooked, add a little more stock or water and cook for a few more minutes.</li>
+              <li>Once cooked, remove the pan from the heat, cover with a clean kitchen towel, and let the paella rest for about 5 minutes.</li>
+              <li>Garnish with fresh parsley and serve with lemon wedges on the side.</li>
+          </ol>
+      </div>
+      </main>
+
+      <footer>
+        <p>&copy; 2024 Slices and Spices. All rights reserved.</p>
+        <p>
+          Contact us at
+          <a href="mailto:info@slicesandspices.com">info@slicesandspices.com</a>
+        </p>
+      </footer>
+    </div>
+
+    <script src="{% static 'js/main.js' %}"></script>
+  </body>
+</html>
